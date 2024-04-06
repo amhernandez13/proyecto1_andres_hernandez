@@ -10,9 +10,46 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #255538;
     border-radius: 6px;
     margin: 20px;
     padding: 10px;
     color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#goToMain {
+    color: white;
+    text-decoration: none;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+#nav-right{
+   display: flex;
+   align-items: center;
+   font-family: "DM Sans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 16px;
+}
+
+#theme {
+    margin-left: 10px;
+    border: 0px;
+    outline: none;
+    width: 36px;
+    height: 36px;
+    width: 36px;
+    background-color: rgba(255, 0, 0, 0);
+    background-image: url(../img/dark-button.png);
+    background-size: 36px;
+    transform: scaleX(-1);
 }
