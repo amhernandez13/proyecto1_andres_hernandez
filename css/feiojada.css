@@ -54,78 +54,35 @@ a{
     transform: scaleX(-1);
 }
 
-
-
-header {
+main {
     max-width: 1000px;
     margin: auto;
-    border-radius: 5px;
-    height: 368px;
-    background-image: url(../img/Comida-latinoamericana.webp);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-   
-}
-
-h1 {
-    color: white;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 61px;
-    max-width: 500px;
-    margin: 30px;
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-main, h4 {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 30px;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    color: #7E4333;
-    ;
 }
 
 #main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+    "recipe ingredients"
+    "recipe moreRecipes";
 }
 
-.recipe {
+#recipe {
+    grid-area: recipe;
     background-color: white;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-main img {
-    max-height: 140px;
-    object-fit: cover;
+#ingredients {
+    grid-area: ingredients; 
 }
 
-h2 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 36px;
-    color: #7E4333;
-}
-
-.recipe-content, h3, li {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: black;
-    padding-left: 25px;
-}
-
-h3, li {
-    padding: 0px;
+#moreRecipes {
+    grid-area: moreRecipes;
 }
 
 footer {
@@ -152,20 +109,4 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-}
-
-@media (max-width: 768px) {
-    #main-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    body {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-} 
-
-@media (max-width: 560px) {
-    #main-container {
-        grid-template-columns: 1fr;
-    } 
 }
