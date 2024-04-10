@@ -5,6 +5,10 @@
 
 body {
     background-color: #f3e5d8;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 nav {
@@ -61,12 +65,30 @@ main {
 
 #main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto auto;
 
     grid-template-areas: 
     "recipe ingredients"
     "recipe moreRecipes";
+    
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #7E4333;
+    ;
+}
+
+h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #7E4333;
 }
 
 #recipe {
@@ -77,12 +99,87 @@ main {
     border-radius: 10px;
 }
 
+#recipe img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#recipe div {
+    background-color: #FFF7FC;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#recipe li {
+    margin-bottom: 10px;
+}
+
 #ingredients {
-    grid-area: ingredients; 
+    grid-area: ingredients;
+    background-color: white; 
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#ingredients ul {
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-bottom: 1px solid #7E4333;
+    padding: 10px;
+}
+
+table td.propiedad {
+    text-align: left;
+}
+
+table td.valor {
+    text-align: right;
+    font-weight: 700;
+    color: #7E4333 ;
 }
 
 #moreRecipes {
     grid-area: moreRecipes;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#moreRecipes a {
+    display: flex;
+    color: black;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.img-recipe {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;    
+}
+
+#moreRecipes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;  
+}
+
+#moreRecipes h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
 footer {
