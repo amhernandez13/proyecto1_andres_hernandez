@@ -58,6 +58,11 @@ a{
     transform: scaleX(-1);
 }
 
+#theme:hover {
+    opacity: 50%;
+    transition: opacity 0.5s;
+}
+
 main {
     max-width: 1000px;
     margin: auto;
